@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>regstration form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+        
+        h1 {
+            margin: 10px;
+        }
+        
+        p {
+            background-color: rgb(12, 118, 150);
+            color: white;
+            margin: 0px;
+            padding: 12px;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .container {
+            padding: 20px 100px 0px 100px;
+            background-color: white;
+        }
+        
+        input[type=password],
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            background: #f1f1f1;
+            border: 0px;
+            border-radius: 5px;
+            outline: none;
+        }
+        
+        input[type=text]:focus,
+        input[type=password],
+        select:focus {
+            background-color: rgb(206, 204, 204);
+            outline: none;
+        }
+        
+        hr {
+            border-bottom: .3px solid #dfdede;
+            margin-bottom: 25px;
+        }
+        
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 20px;
+            margin: 0px 0;
+            border: 0px;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            outline: none;
+        }
+        
+        .registerbtn:hover {
+            opacity: 1;
+        }
+        
+        a {
+            color: dodgerblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="main-form">
+        <h1>Student Registration </h1>
+
+        <form action="/action_page.php">
+            <p>FILL ALL INFO </p>
+
+            <div class="container">
+                <hr>
+                <label><b>First Name :</b></label>
+                <input type="text" placeholder="Enter First Name" name="email" class="form-control mb">
+
+                <label><b>Last Name :</b></label>
+                <input type="text" placeholder="Enter Last Name" name="email" class="form-control mb">
+
+                <label><b>Father Name :</b></label>
+                <input type="text" placeholder="Enter Father Name" name="email" class="form-control mb">
+
+                <label><b>Mobile No :</b></label>
+                <input type="text" placeholder="+911234567890" name="email" class="form-control mb">
+
+                <label><b>Collage Name :</b></label>
+                <input type="text" placeholder="Enter Collage Name" name="email" class="form-control mb">
+
+                <label><b>Education :</b></label>
+                <input type="text" placeholder="Enter Education" name="email" class="form-control mb">
+                <label for=""><b>Gender</b></label>
+                <select id="country" name="country">
+                    <option value="australia">Male</option>
+                    <option value="canada">Female</option>
+                   </select>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <hr>
+
+                <button type="submit" class="registerbtn">Register</button><br><br>
+                <pre style="text-align: center;">I have alredy Registration done <a href="user-login.html"><span>sign in?</span></a></pre>
+                <br>
+            </div>
+
+
+</body>
+
+</html>
